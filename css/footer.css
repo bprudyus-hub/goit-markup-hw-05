@@ -93,3 +93,36 @@ align-items: center;
 .footer-icons:focus {
 background-color:#31d0aa ;
 }
+.form-subscribe{
+    /* width: 453px; */
+    height: 80px;
+    margin-left: 83px;
+   
+}
+.btn-ftr{
+    color: #fff;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+max-width: 165px;
+ transition: background-color 250ms linear; 
+}
+
+.form-input{
+    border: 1px solid var(--white);
+border-radius: 4px;
+padding: 8px 16px;
+width: 264px;
+height: 40px;
+margin-right: 24px;
+background-color: #2E2F42;
+}
+.form-email{
+width: 453px;
+display: flex;
+}
+.btn-ftr:hover{
+background-color:#31d0aa;
+}
