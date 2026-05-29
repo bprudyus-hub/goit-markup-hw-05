@@ -12,7 +12,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" >
 </head>
-<body>
+<>
   <!-- #region header -->
     <header id="header" class="page-header ">
         <div class="header container "> 
@@ -361,7 +361,11 @@
           <label class="form-label"><p class="footer-title" >Subscribe</p>
             <form class="form-email" name="email" autocomplete="off">
             <input class="form-input" type="text" name="email" placeholder="E-mail" />
-            <button class="btn-ftr" type="submit">Subscribe</button>
+            <button class="btn-ftr" type="submit">Subscribe
+               <svg width="24" height="">
+                 <use href="./images/icons.svg#icon-send"></use>
+             </svg>
+            </button>
           </form>
           </label>
         </div>
@@ -369,5 +373,88 @@
         
     </footer>
     <!-- #endregion footer -->
+
+    
+<!--#region modal-->
+    <div class="overlay-modal">
+      <div class="modal">
+       
+          <button class="modal-close" type="button">
+            <svg width="8" height="8">
+                 <use href="./images/icons.svg#icon-close"></use>
+             </svg>
+          </button>
+          <p class="overlay-text">Leave your contacts and we will call you back</p>
+
+          <form class="overlay-form">
+
+          <div class="input-wraper">
+             <label for="form-name" class="overlay-label">Name</label>
+            <div class="input-svg" >
+              <input id="form-name" class="overlay-input" type="text" name="name"/>
+              <svg width="24" height="24" class="form-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            
+          </div>
+          
+          <div class="input-wraper" >
+            <label for="form-phone" class="overlay-label" >Phone</label>
+              <div class="input-svg" >
+                <input id="form-phone" class="overlay-input" type="tel" name="tel"/>
+                <svg width="24" height="24" class="form-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            
+          </div>
+
+          <div class="input-wraper" >
+            <label for="form-email" class="overlay-label">Email</label>
+              <div class="input-svg" >
+                <input id="form-email" class="overlay-input" type="email" name="email" />
+                <svg width="24" height="24" class="form-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            
+          </div>
+
+          <div class="textarea-wraper">
+            <label for="form-coment" class="overlay-label"  >Comment</label>
+            <textarea id="form-coment" class="overlay-textarea" type="text" name="comment"  placeholder="Text input" rows="3" ></textarea>
+            
+          </div>
+
+          <div>
+            <input type="checkbox"
+            name="form-checkbox"
+            id="form-checkbox"
+            class="checkbox-input sr-only"/>
+            
+            <label for="form-checkbox" class="checkbox-label">
+
+             
+              <span class="custom-checkbox">
+                   <svg width="10" height="8" class="checkbox-icon">
+              <use href="./images/icons.svg#icon-check-mark"></use>
+              </svg>
+              </span>  
+
+
+              <span>  
+                 I accept the terms and conditions of the <a href="#"
+                class="checkbox-color-plt">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+
+          <button class="btn-overlay" type="submit">Send</button>
+
+        </form>
+      </div>
+    </div>
+    <!--#endregion modal-->
 </body>
 </html>

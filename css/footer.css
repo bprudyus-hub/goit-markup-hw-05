@@ -117,12 +117,22 @@ padding: 8px 16px;
 width: 264px;
 height: 40px;
 margin-right: 24px;
-background-color: #2E2F42;
+background-color: transparent;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .form-email{
 width: 453px;
 display: flex;
+margin-top: 16px;
 }
 .btn-ftr:hover{
 background-color:#31d0aa;
 }
+
+.form-input:focus{
+    outline: none;
+    border-color: #31d0aa;
+    
+}
+
