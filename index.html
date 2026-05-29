@@ -12,7 +12,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" >
 </head>
-<>
+<body>
   <!-- #region header -->
     <header id="header" class="page-header ">
         <div class="header container "> 
@@ -358,11 +358,11 @@
           </ul>
         </div>
         <div class="form-subscribe">
-          <label class="form-label"><p class="footer-title" >Subscribe</p>
+          <label class="footet-label"><p class="footer-title" >Subscribe</p>
             <form class="form-email" name="email" autocomplete="off">
-            <input class="form-input" type="text" name="email" placeholder="E-mail" />
+            <input class="form-input" type="email" name="email" placeholder="E-mail" />
             <button class="btn-ftr" type="submit">Subscribe
-               <svg width="24" height="">
+               <svg width="24" height="24" class="ftr-icon">
                  <use href="./images/icons.svg#icon-send"></use>
              </svg>
             </button>
@@ -376,7 +376,7 @@
 
     
 <!--#region modal-->
-    <div class="overlay-modal">
+    <div class="overlay-modal is open" id="modal">
       <div class="modal">
        
           <button class="modal-close" type="button">
