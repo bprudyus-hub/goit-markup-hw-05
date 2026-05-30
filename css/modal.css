@@ -43,13 +43,13 @@ border: 1px solid var(--navy-blue-modal);
 border-radius: 24px;
 width: 24px;
 height: 24px;
-color: currentColor;
+fill: #2e2f42;
 background: var(--cornflower);
 position: absolute;
 top: 24px;
 right: 24px;
 cursor: pointer;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 line-height: 0;
 }
 
@@ -57,6 +57,7 @@ line-height: 0;
 .modal-close:focus{
 background: var(--ocean);
 fill: white;
+border: var(--ocean) ;
 }
 
 
@@ -205,6 +206,7 @@ letter-spacing: 0.04em;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: var(--iris);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* cursor: pointer; */
 }
 .btn-overlay:hover,
 .btn-overlay:focus{
